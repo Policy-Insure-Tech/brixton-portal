@@ -1,0 +1,82 @@
+<div class="row mb-3" style="flex-wrap: nowrap">
+  <div class="col-7 customCol">
+    <div class="chart-container">
+      <p style="font-size: 22px; font-weight: 700">Sales Person</p>
+      <canvas id="barLineOne">{{ barLineOne }}</canvas>
+    </div>
+  </div>
+  <div class="col-5 customCol" style="margin-left: 1rem">
+    <p style="font-size: 22px; font-weight: 700">Product Type</p>
+
+    <div class="chart-container">
+      <canvas id="donutOne">{{ donutOne }}</canvas>
+    </div>
+  </div>
+</div>
+
+<div class="row" style="flex-wrap: nowrap">
+  <div class="col-7 customCol">
+    <div
+      class="row"
+      style="
+        border-radius: 5px;
+        background: #4353ff;
+        color: white;
+        padding: 10px 1rem;
+      "
+    >
+      <div class="col">Sales Person</div>
+      <div class="col" style="text-align: center">No. of Sales</div>
+      <div class="col" style="text-align: right">Total Sales</div>
+    </div>
+    <div style="border-radius: 10px; margin-top: 10px">
+      <div
+        *ngFor="let person of testRow"
+        class="row"
+        style="padding: 10px 1rem; border: 1px solid #d1d1d1"
+      >
+        <div class="col">Mani</div>
+        <div class="col" style="text-align: center">11</div>
+        <div class="col" style="text-align: right">426666</div>
+      </div>
+
+      <div class="row" style="padding: 10px 1rem; border: 1px solid #d1d1d1">
+        <div class="col">Mani</div>
+        <div class="col" style="text-align: center">11</div>
+        <div class="col" style="text-align: right">426666</div>
+      </div>
+    </div>
+  </div>
+  <div class="col-5 customCol" style="margin-left: 1rem">
+    <div
+      class="row"
+      style="
+        border-radius: 5px;
+        background: #4353ff;
+        color: white;
+        padding: 10px 1rem;
+      "
+    >
+      <div class="col">Sales Person</div>
+      <div class="col" style="text-align: center">No. of Sales</div>
+      <div class="col" style="text-align: right">Total Sales</div>
+    </div>
+    <div style="border-radius: 10px; margin-top: 10px">
+      <div
+        *ngFor="let person of testRow"
+        class="row"
+        style="padding: 10px 1rem; border: 1px solid #d1d1d1"
+      >
+        <div class="col">Mani</div>
+        <div class="col" style="text-align: center">11</div>
+        <div class="col" style="text-align: right">426666</div>
+      </div>
+
+      <div class="row" style="padding: 10px 1rem; border: 1px solid #d1d1d1">
+        <div class="col">Mani</div>
+        <div class="col" style="text-align: center">11</div>
+        <div class="col" style="text-align: right">426666</div>
+      </div>
+    </div>
+  </div>
+</div>
